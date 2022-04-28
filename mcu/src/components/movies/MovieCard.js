@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Card from "@mui/material/Card";
 
 const MovieCard = () => {
-    return (
-        <h1>movie card</h1>
-    )
-}
+  return <Card variant="outlined">Card</Card>;
+};
 
 export default MovieCard;
