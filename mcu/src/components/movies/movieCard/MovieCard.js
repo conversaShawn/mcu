@@ -8,8 +8,8 @@ const MovieCard = () => {
   return (
     <Card className="movieCard" variant="outlined">
       <CardMedia 
+      className="movieCardMedia"
       component="img"
-      // image="../../../../public/iron_man.jpeg"
       src={image}
       alt="Iron Man poster"
       />
