@@ -9,7 +9,4 @@ describe("check MovieCard", () => {
       .find(".movieCardMedia")
       .should("have.attr", "alt", "Iron Man poster");
   });
-  // it('checks css', () => {
-  //     cy.get(".movieCard").find(".movieCardMedia").should('have', 'img').should('include', 'iron_man.jpeg')
-  // })
 });
