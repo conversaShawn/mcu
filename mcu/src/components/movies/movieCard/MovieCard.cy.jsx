@@ -13,9 +13,3 @@ describe("check MovieCard", () => {
   //     cy.get(".movieCard").find(".movieCardMedia").should('have', 'img').should('include', 'iron_man.jpeg')
   // })
 });
-describe('check image css', () => {
-    it("checks css", () => {
-        cy.mount(<CardMedia />)
-        cy.get("img").should("have.css", "height", "100px");
-    });
-})
