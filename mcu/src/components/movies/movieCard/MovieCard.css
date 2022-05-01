@@ -5,12 +5,12 @@ img {
     height: auto;
 }
 
-.movieCard {
+/* .movieCard {
     max-width:150px;
     max-height:300px;
     width: auto;
     height: auto;
-}
+} */
 
 /* For Desktop View */
 /* @media screen and (min-width: 1024px) {

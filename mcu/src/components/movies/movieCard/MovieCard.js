@@ -1,22 +1,17 @@
 import React from "react";
 import "./MovieCard.css";
-import ImageList from "@mui/material/ImageList";
+import Card from "@mui/material/Card";
 import ImageListItem from "@mui/material/ImageListItem";
 
 const MovieCard = () => {
   return (
-    <ImageList className="movieCard">
+    <ImageListItem>
       {movieList.map((movie) => (
-        <ImageListItem key={movie.img}>
-          <img
-            src={movie.img}
-            // srcSet={movie.img}
-            alt={movie.title}
-            // loading="lazy"
-          />
-        </ImageListItem>
+        <Card className="movieCard" key={movie.img}>
+          <img src={movie.img} alt={movie.title} />
+        </Card>
       ))}
-    </ImageList>
+    </ImageListItem>
   );
 };
 
@@ -26,9 +21,13 @@ const movieList = [
     title: "Iron Man",
   },
   {
+    img: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theincrediblehulk_lob_crd_01_2.jpg",
+    title: "The Incredidle HUlk",
+  },
+  {
     img: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman2_lob_crd_01_3.jpg",
     title: "Iron Man 2",
-  }
+  },
 ];
 
 export default MovieCard;
