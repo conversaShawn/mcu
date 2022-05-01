@@ -1,21 +1,11 @@
 import React from "react";
 import "./MovieCard.css";
-// import * as movieImages from "../../../images/images.js";
-import ironMan from "../../../images/images.js";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
 const MovieCard = () => {
   return (
     <ImageList className="movieCard">
-      {/* {movieList.map((movie) => (
-        <CardMedia
-          className="movieCardMedia"
-          component="img"
-          src={movie.img}
-          alt="Iron Man poster"
-        />
-      ))} */}
       {movieList.map((movie) => (
         <ImageListItem key={movie.img}>
           <img
