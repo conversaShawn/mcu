@@ -5,7 +5,7 @@ img {
     height: auto;
 }
 
-.test {
+.movieContainer {
   display: flex;
   flex-wrap: wrap;
 }

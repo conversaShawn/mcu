@@ -6,9 +6,9 @@ import Grid from "@mui/material/Grid";
 
 const MovieCard = () => {
   return (
-    <Grid className="test" >
+    <Grid className="movieContainer" >
       {movieList.map((movie) => (
-        <Card key={movie.img}>
+        <Card className="movieImage" key={movie.img}>
           <img src={movie.img} alt={movie.title} />
         </Card>
       ))}
@@ -51,7 +51,7 @@ const movieList = [
   },
   {
     img: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/theincrediblehulk_lob_crd_01_2.jpg",
-    title: "The Incredidle HUlk",
+    title: "The Incredible Hulk",
   },
   {
     img: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman2_lob_crd_01_3.jpg",
