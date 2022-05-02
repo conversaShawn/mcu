@@ -1,17 +1,17 @@
 import React from "react";
 import "./MovieCard.css";
 import Card from "@mui/material/Card";
-import ImageListItem from "@mui/material/ImageListItem";
+// import ImageListItem from "@mui/material/ImageListItem";
 
 const MovieCard = () => {
   return (
-    <ImageListItem>
+    <Card className="test">
       {movieList.map((movie) => (
-        <Card className="movieCard" key={movie.img}>
+        <Card key={movie.img}>
           <img src={movie.img} alt={movie.title} />
         </Card>
       ))}
-    </ImageListItem>
+    </Card>
   );
 };
 
