@@ -1,12 +1,13 @@
-/* img {
+img {
     max-width:150px;
     max-height:300px;
     width: auto;
     height: auto;
-} */
+}
 
 .test {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* For Desktop View */
