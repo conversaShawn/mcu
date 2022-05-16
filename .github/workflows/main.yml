@@ -24,7 +24,7 @@ jobs:
           # Cypress path from root
           working-directory: mcu
           # relative to working directory root
-          config-file: cypress.config.js
+          config-file: mcu/cypress.config.js
           record: true
         env:
           # pass the Dashboard project id as an environment variable
