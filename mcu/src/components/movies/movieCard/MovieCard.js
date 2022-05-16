@@ -1,18 +1,14 @@
 import React from "react";
 import "./MovieCard.css";
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
-// import ImageListItem from "@mui/material/ImageListItem";
 
 const MovieCard = () => {
   return (
-    <Grid className="movieContainer" >
+    <Card className="movieContainer">
       {movieList.map((movie) => (
-        <Card className="movieImage" key={movie.img}>
-          <img src={movie.img} alt={movie.title} />
-        </Card>
+        <img src={movie.img} alt={movie.title} />
       ))}
-    </Grid>
+    </Card>
   );
 };
 

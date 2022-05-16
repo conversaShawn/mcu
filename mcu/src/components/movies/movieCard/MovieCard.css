@@ -5,10 +5,10 @@ img {
     height: auto;
 }
 
-.movieContainer {
+/* .movieContainer {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 /* For Desktop View */
 /* @media screen and (min-width: 1024px) {
