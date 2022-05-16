@@ -17,13 +17,12 @@ jobs:
       - name: Checkout
         # GitHub Action for running Cypress end-to-end tests
         uses: actions/checkout@v2
-        with:
-          # just perform install
-          runTests: false
       # because of "record" and "parallel" parameters these containers will load balance all found tests among themselves
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
+          # just perform install
+          runTests: false
           # Cypress path from root
           working-directory: mcu
           # relative to working directory root
